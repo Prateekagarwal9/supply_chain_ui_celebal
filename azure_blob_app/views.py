@@ -34,6 +34,7 @@ def execute_all_func(form_data):
         databricksname = form_data["databricksname"]
         accesstoken = form_data["accesstoken"]
         workspaceurl = form_data["databricksworkspaceurl"]
+        databricksscope = form_data["databricksscope"]
         powerbiname = form_data["powerbiembedded"]
         powerbiadmin = form_data["powerbiadmin"]
         keyvaultname = form_data["keyvaultname"]
@@ -143,6 +144,7 @@ def execute_all_func(form_data):
         dic2['parameters']['DatabricksName']['value'] = databricksname
         dic2['parameters']['DataBricksWorkspaceURL']['value'] = workspaceurl
         dic2['parameters']['DataBricksToken']['value'] = accesstoken
+        dic2['parameters']['DataBricksScope']['value']  = databricksscope
         dic2['parameters']['PowerBIEmbeddedName']['value'] = powerbiname
         dic2['parameters']['PowerBIEmbeddedAdmin']['value'] = powerbiadmin
         dic2['parameters']['AppServiceName']['value'] = appservicename
